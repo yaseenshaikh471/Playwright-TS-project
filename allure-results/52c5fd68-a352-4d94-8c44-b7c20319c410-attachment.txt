@@ -1,0 +1,9 @@
+4
+Rule: html-has-lang
+Tags: cat.language, wcag2a, wcag311, TTv5, TT11.a, EN-301-549, EN-9.3.1.1, ACT, RGAAv4, RGAA-8.3.1
+Rule: landmark-one-main
+Tags: cat.semantics, best-practice
+Rule: page-has-heading-one
+Tags: cat.semantics, best-practice
+Rule: region
+Tags: cat.keyboard, best-practice, RGAAv4, RGAA-9.2.1
