@@ -9,13 +9,26 @@
   "type": "commonjs",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.55.0",
-    "@types/node": "^24.0.3",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.13.3",
     "allure-commandline": "^2.34.1",
     "allure-playwright": "^3.4.2"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.11.0",
-    "csv-parse": "^6.1.0"
-  }
+    "ajv": "^8.20.0",
+    "csv-parse": "^7.0.2",
+    "fs": "^0.0.1-security"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaseenshaikh471/Playwright-TS-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yaseenshaikh471/Playwright-TS-project/issues"
+  },
+  "homepage": "https://github.com/yaseenshaikh471/Playwright-TS-project#readme"
 }
