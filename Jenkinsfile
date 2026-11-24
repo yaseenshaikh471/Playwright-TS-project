@@ -6,30 +6,24 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Check tools') {
             steps {
-                bat 'node --version'
-                bat 'npm --version'
-                bat 'git --version'
+                sh 'node --version'
+                sh 'npm --version'
+                sh 'git --version'
             }
         }
 
         stage('Install dependencies') {
             steps {
-                bat 'npm ci'
-                bat 'npx playwright install chromium'
+                sh 'npm ci'
+                sh 'npx playwright install chromium'
             }
         }
 
         stage('Run Playwright tests') {
             steps {
-                bat 'npx playwright test'
+                sh 'npx playwright test'
             }
         }
     }
