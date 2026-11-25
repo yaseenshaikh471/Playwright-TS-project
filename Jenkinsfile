@@ -6,8 +6,9 @@ pipeline {
     }
 
     environment {
-        CI = 'true'
-    }
+    CI = 'true'
+    npm_config_cache = "${WORKSPACE}/.npm-cache"
+}
 
     stages {
         stage('Check tools') {
